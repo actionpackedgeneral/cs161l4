@@ -1,0 +1,425 @@
+//  
+//  PTLsim: Cycle Accurate x86-64 Simulator
+//  Copyright 1999-2007 Matt T. Yourst <yourst@yourst.com>
+// 
+//  Revision 229 (2009-03-14)
+//  Built Oct  7 2012 11:42:29 on localhost.localdomain using gcc-4.1
+//  Running on DESKTOP-E15MJBB.localdomain
+//  
+//  Arguments: a.out
+//  Thread 89 is running in 64-bit x86-64 mode
+//  
+
+Active parameters:
+  -core         ooo
+  -quiet        disabled
+  -logfile      ptlsim.log
+  -loglevel     0
+  -startlog     0
+  -startlogrip  -1
+  -consolelog   disabled
+  -bootlog      disabled
+  -logbufsize   524288
+  -dump-state-now disabled
+  -abort-at-end disabled
+  -mm-logfile   
+  -mm-logbuf-size 16384
+  -mm-log-inline disabled
+  -mm-validate  disabled
+  -ringbuf      disabled
+  -ringbuf-size 32768
+  -flush-events disabled
+  -ringbuf-trigger-rip -1
+  -ringbuf-trigger-virt-start 0
+  -ringbuf-trigger-virt-end 0
+  -stats        
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -startrip     -1
+  -excludeld    enabled
+  -trigger      disabled
+  -pause-at-startup 0
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      -1
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -validate     disabled
+  -validate-start-cycle 0
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -overshoot-and-dump disabled
+  -bbdump       
+  -seq          0
+  -exitend      disabled
+Active parameters:
+  -core         ooo
+  -quiet        disabled
+  -logfile      ptlsim.log
+  -loglevel     0
+  -startlog     0
+  -startlogrip  -1
+  -consolelog   disabled
+  -bootlog      disabled
+  -logbufsize   524288
+  -dump-state-now disabled
+  -abort-at-end disabled
+  -mm-logfile   
+  -mm-logbuf-size 16384
+  -mm-log-inline disabled
+  -mm-validate  disabled
+  -ringbuf      disabled
+  -ringbuf-size 32768
+  -flush-events disabled
+  -ringbuf-trigger-rip -1
+  -ringbuf-trigger-virt-start 0
+  -ringbuf-trigger-virt-end 0
+  -stats        
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -startrip     -1
+  -excludeld    enabled
+  -trigger      disabled
+  -pause-at-startup 0
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      -1
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -validate     disabled
+  -validate-start-cycle 0
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -overshoot-and-dump disabled
+  -bbdump       
+  -seq          0
+  -exitend      disabled
+loader: interp_entry 0x7f909c801090, program_entry 0x7f909cc00be0
+
+Breakpoint inserted at rip 0x7f909c801090
+
+=== Preparing to switch to native mode at rip 0x7f909c801090 ===
+
+Final state:
+VCPU State:
+  Architectural Registers:
+  rax    0x0000000000000000  rcx    0x0000000000000000  rdx    0x0000000000000000  rbx    0x0000000000000000
+  rsp    0x00007fffd1829460  rbp    0x0000000000000000  rsi    0x0000000000000000  rdi    0x0000000000000000
+  r8     0x0000000000000000  r9     0x0000000000000000  r10    0x0000000000000000  r11    0x0000000000000000
+  r12    0x0000000000000000  r13    0x0000000000000000  r14    0x0000000000000000  r15    0x0000000000000000
+  xmml0  0x0000000000000000  xmmh0  0x0000000000000000  xmml1  0x0000000000000000  xmmh1  0x0000000000000000
+  xmml2  0x0000000000000000  xmmh2  0x0000000000000000  xmml3  0x0000000000000000  xmmh3  0x0000000000000000
+  xmml4  0x0000000000000000  xmmh4  0x0000000000000000  xmml5  0x0000000000000000  xmmh5  0x0000000000000000
+  xmml6  0x0000000000000000  xmmh6  0x0000000000000000  xmml7  0x0000000000000000  xmmh7  0x0000000000000000
+  xmml8  0x0000000000000000  xmmh8  0x0000000000000000  xmml9  0x0000000000000000  xmmh9  0x0000000000000000
+  xmml10 0x0000000000000000  xmmh10 0x0000000000000000  xmml11 0x0000000000000000  xmmh11 0x0000000000000000
+  xmml12 0x0000000000000000  xmmh12 0x0000000000000000  xmml13 0x0000000000000000  xmmh13 0x0000000000000000
+  xmml14 0x0000000000000000  xmmh14 0x0000000000000000  xmml15 0x0000000000000000  xmmh15 0x0000000000000000
+  fptos  0x0000000000000000  fpsw   0x0000000000000000  fptags 0x0000000000000000  fpstack 0x00000000701232a0
+  msr    0x0000000000000000  dlptr  0x0000000000000000  trace  0x0000000000000000  ctx    0x0000000070123000
+  rip    0x00007f909c801090  flags  0x0000000000000000  dlend  0x0000000000000000  selfrip 0x0000000000000000
+  nextrip 0x0000000000000000  ar1    0x0000000000000000  ar2    0x0000000000000000  zero   0x0000000000000000
+  Segment Registers:
+    cs 0x0033: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+    ss 0x002b: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+    ds 0x002b: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+    es 0x002b: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+    fs 0x0053: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+    gs 0x002b: base 0000000000000000, limit 00000000ffffffff, ring 0: usr            
+  FPU:
+    FP Control Word: 0x0000027f
+    MXCSR:           0x00001f80
+    fp7  st(7)  Empty  0x0000000000000000 => 0.0
+    fp6  st(6)  Empty  0x0000000000000000 => 0.0
+    fp5  st(5)  Empty  0x0000000000000000 => 0.0
+    fp4  st(4)  Empty  0x0000000000000000 => 0.0
+    fp3  st(3)  Empty  0x0000000000000000 => 0.0
+    fp2  st(2)  Empty  0x0000000000000000 => 0.0
+    fp1  st(1)  Empty  0x0000000000000000 => 0.0
+    fp0  st(0)  Empty  0x0000000000000000 => 0.0
+  Internal State:
+    Last internal exception: 0x0000000000000000 (NoException)
+
+=== Switching to native mode at rip 0x7f909c801090 ===
+
+
+=== Removed thunk patch at rip 0x7f909c801090 ===
+
+=== Switching to simulation mode at rip 0x7f909c801090 ===
+
+resync_with_process_maps: found 33 memory map extents:
+  arwxp-               0x1000               16 KB 
+  -rwxp-           0x70000000             1244 KB          0 in 0.0.1089288
+  arw-p-           0x70137000              836 KB 
+  -rw-s-           0x74000000             4096 KB          0 in 0.0.1143975
+  arwxp-           0x7ffd0000                4 KB 
+  arwxp-           0x7ffe0000                4 KB 
+  arwxp-           0x7fff0000                4 KB 
+  -rwxs-       0x7f909b01b000            16384 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c01b000             3072 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c31b000              516 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c39c000              132 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c3bd000               68 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c3ce000               68 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c3df000              132 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c400000             1024 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c500000             1024 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c600000             1024 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c700000             1024 KB          0 in 0.0.1143975
+  -r-xp-       0x7f909c800000                4 KB          0 in 0.0.170904
+  -rwxp-       0x7f909c801000                4 KB 0x0000000000001000 in 0.0.170904
+  -rwxp-       0x7f909c802000                4 KB 0x0000000000002000 in 0.0.170904
+  -r-xp-       0x7f909c803000              140 KB 0x0000000000003000 in 0.0.170904
+  -r-xp-       0x7f909c826000                4 KB 0x0000000000026000 in 0.0.170904
+  -rwxs-       0x7f909c827000             1024 KB          0 in 0.0.1143975
+  -rwxs-       0x7f909c927000             1024 KB          0 in 0.0.1143975
+  -rw-p-       0x7f909ca27000                8 KB 0x0000000000027000 in 0.0.170904
+  arw-p-       0x7f909ca29000                4 KB 
+  -rwxs-       0x7f909ca5b000             1024 KB          0 in 0.0.1143975
+  -r-xp-       0x7f909cc00000                8 KB          0 in 0.0.1144252
+  -r-xp-       0x7f909cc02000                4 KB 0x0000000000002000 in 0.0.1144252
+  -rw-p-       0x7f909ce02000                8 KB 0x0000000000002000 in 0.0.1144252
+  arw-pS       0x7fffd102a000             8192 KB 
+  ar-xpv       0x7fffd18f5000                4 KB 
+setattr: region 0x1000 to 0x5000 (16 KB) has user-visible attributes rwx
+setattr: region 0x70000000 to 0x70137000 (1244 KB) has user-visible attributes rwx
+setattr: region 0x70137000 to 0x70208000 (836 KB) has user-visible attributes rw-
+setattr: region 0x74000000 to 0x74400000 (4096 KB) has user-visible attributes rw-
+setattr: region 0x7ffd0000 to 0x7ffd1000 (4 KB) has user-visible attributes rwx
+setattr: region 0x7ffe0000 to 0x7ffe1000 (4 KB) has user-visible attributes rwx
+setattr: region 0x7fff0000 to 0x7fff1000 (4 KB) has user-visible attributes rwx
+setattr: region 0x7f909b01b000 to 0x7f909c01b000 (16384 KB) has user-visible attributes rwx
+setattr: region 0x7f909c01b000 to 0x7f909c31b000 (3072 KB) has user-visible attributes rwx
+setattr: region 0x7f909c31b000 to 0x7f909c39c000 (516 KB) has user-visible attributes rwx
+setattr: region 0x7f909c39c000 to 0x7f909c3bd000 (132 KB) has user-visible attributes rwx
+setattr: region 0x7f909c3bd000 to 0x7f909c3ce000 (68 KB) has user-visible attributes rwx
+setattr: region 0x7f909c3ce000 to 0x7f909c3df000 (68 KB) has user-visible attributes rwx
+setattr: region 0x7f909c3df000 to 0x7f909c400000 (132 KB) has user-visible attributes rwx
+setattr: region 0x7f909c400000 to 0x7f909c500000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909c500000 to 0x7f909c600000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909c600000 to 0x7f909c700000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909c700000 to 0x7f909c800000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909c800000 to 0x7f909c801000 (4 KB) has user-visible attributes r-x
+setattr: region 0x7f909c801000 to 0x7f909c802000 (4 KB) has user-visible attributes rwx
+setattr: region 0x7f909c802000 to 0x7f909c803000 (4 KB) has user-visible attributes rwx
+setattr: region 0x7f909c803000 to 0x7f909c826000 (140 KB) has user-visible attributes r-x
+setattr: region 0x7f909c826000 to 0x7f909c827000 (4 KB) has user-visible attributes r-x
+setattr: region 0x7f909c827000 to 0x7f909c927000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909c927000 to 0x7f909ca27000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909ca27000 to 0x7f909ca29000 (8 KB) has user-visible attributes rw-
+setattr: region 0x7f909ca29000 to 0x7f909ca2a000 (4 KB) has user-visible attributes rw-
+setattr: region 0x7f909ca5b000 to 0x7f909cb5b000 (1024 KB) has user-visible attributes rwx
+setattr: region 0x7f909cc00000 to 0x7f909cc02000 (8 KB) has user-visible attributes r-x
+setattr: region 0x7f909cc02000 to 0x7f909cc03000 (4 KB) has user-visible attributes r-x
+setattr: region 0x7f909ce02000 to 0x7f909ce04000 (8 KB) has user-visible attributes rw-
+setattr: region 0x7fffd102a000 to 0x7fffd182a000 (8192 KB) has user-visible attributes rw-
+setattr: region 0x7fffd18f5000 to 0x7fffd18f6000 (4 KB) has user-visible attributes r-x
+resync_with_process_maps: brk from 0x7fffc9408000 to 0x7fffc9408000
+resync_with_process_maps: fs 0053, fsbase 0x0, gs 002b, gsbase 0x0
+  Original user stack range: 0x7fffdf810000 to 0x7fffe0000000 (8323072 bytes)
+  Stack from 0x7fffdf810000 to 0x7fffd102a000 (-243163136 bytes) is allocate-on-access
+setattr: region 0x70000000 to 0x80000000 (262144 KB) has user-visible attributes ---
+Baseline state:
+VCPU State:
+  Architectural Registers:
+  rax    0x0000000000000000  rcx    0x0000000000000000  rdx    0x0000000000000000  rbx    0x0000000000000000
+  rsp    0x00007fffd1829460  rbp    0x0000000000000000  rsi    0x0000000000000000  rdi    0x0000000000000000
+  r8     0x0000000000000000  r9     0x0000000000000000  r10    0x0000000000000000  r11    0x0000000000000000
+  r12    0x0000000000000000  r13    0x0000000000000000  r14    0x0000000000000000  r15    0x0000000000000000
+  xmml0  0x0000000000000000  xmmh0  0x0000000000000000  xmml1  0x0000000000000000  xmmh1  0x0000000000000000
+  xmml2  0x0000000000000000  xmmh2  0x0000000000000000  xmml3  0x0000000000000000  xmmh3  0x0000000000000000
+  xmml4  0x0000000000000000  xmmh4  0x0000000000000000  xmml5  0x0000000000000000  xmmh5  0x0000000000000000
+  xmml6  0x0000000000000000  xmmh6  0x0000000000000000  xmml7  0x0000000000000000  xmmh7  0x0000000000000000
+  xmml8  0x0000000000000000  xmmh8  0x0000000000000000  xmml9  0x0000000000000000  xmmh9  0x0000000000000000
+  xmml10 0x0000000000000000  xmmh10 0x0000000000000000  xmml11 0x0000000000000000  xmmh11 0x0000000000000000
+  xmml12 0x0000000000000000  xmmh12 0x0000000000000000  xmml13 0x0000000000000000  xmmh13 0x0000000000000000
+  xmml14 0x0000000000000000  xmmh14 0x0000000000000000  xmml15 0x0000000000000000  xmmh15 0x0000000000000000
+  fptos  0x0000000000000000  fpsw   0x0000000000000000  fptags 0x0000000000000000  fpstack 0x00000000701232a0
+  msr    0x0000000000000000  dlptr  0x0000000000000000  trace  0x0000000000000000  ctx    0x0000000070123000
+  rip    0x00007f909c801090  flags  0x0000000000000000  dlend  0x0000000000000202  selfrip 0x0000000000000000
+  nextrip 0x0000000000000000  ar1    0x0000000000000000  ar2    0x0000000000000000  zero   0x0000000000000000
+  Segment Registers:
+    cs 0x0033: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+    ss 0x002b: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+    ds 0x002b: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+    es 0x002b: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+    fs 0x0053: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+    gs 0x002b: base 0000000000000000, limit ffffffffffffffff, ring 0: usr            
+  FPU:
+    FP Control Word: 0x0000027f
+    MXCSR:           0x00001f80
+    fp7  st(7)  Empty  0x0000000000000000 => 0.0
+    fp6  st(6)  Empty  0x0000000000000000 => 0.0
+    fp5  st(5)  Empty  0x0000000000000000 => 0.0
+    fp4  st(4)  Empty  0x0000000000000000 => 0.0
+    fp3  st(3)  Empty  0x0000000000000000 => 0.0
+    fp2  st(2)  Empty  0x0000000000000000 => 0.0
+    fp1  st(1)  Empty  0x0000000000000000 => 0.0
+    fp0  st(0)  Empty  0x0000000000000000 => 0.0
+  Internal State:
+    Last internal exception: 0x0000000000000000 (NoException)
+Initializing core 'ooo'
+Switching to simulation core 'ooo'...
+Stopping after 9223372036854775807 commits
+Starting out-of-order core toplevel loop
+IssueQueue states:
+Completed             0 cycles,             0 commits:         0 Hz,         0 insns/sec: rip 0x7f909c801090                                                    
+handle_syscall -> (#12 brk) from 0x7f909c81bec9 args  (0x0, 0x5f, 0x4d, 0x0, 0x16, 0x7f909c821665) at iteration 14034
+setbrk(0): returning current brk 0x7fffc9408000
+handle_syscall: result 140736569835520 (0x7fffc9408000); returning to 0x7f909c81bec9
+Invalid opcode at 0x7f909c81a703: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+handle_syscall -> (#63 uname) from 0x7f909c81d017 args  (0x7fffd1828fb0, 0x18, 0xffffffffffffffea, 0x6ffffdff, 0x7f909cc002a8, 0x37ffffa00) at iteration 28338
+handle_syscall: result 0 (0x0); returning to 0x7f909c81d017
+handle_syscall -> (#21 access) from 0x7f909c80f7de args  (0x7f909c821082, 0x0, 0x1, 0x6ffffdff, 0x1, 0x37ffffa00) at iteration 29974
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c80f7de
+handle_syscall -> (#21 access) from 0x7f909c81ce27 args  (0x7f909c823dd0, 0x4, 0x7f909c800190, 0x8, 0x7f909ca297a2, 0x1) at iteration 37223
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c81ce27
+handle_syscall -> (#257 ???) from 0x7f909c81ccdd args  (0xffffff9c, 0x7f909c821428, 0x80000, 0x0, 0xffff, 0x0) at iteration 44840
+handle_syscall: result 5 (0x5); returning to 0x7f909c81ccdd
+handle_syscall -> (#5 fstat) from 0x7f909c81cc43 args  (0x5, 0x7fffd18289a0, 0x7fffd18289a0, 0x0, 0xffff, 0x0) at iteration 45169
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cc43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0xc4df, 0x1, 0x2, 0x5, 0x0) at iteration 45683
+setattr: region 0x7f909c1d0000 to 0x7f909c1dd000 (52 KB) has user-visible attributes r--
+handle_syscall: result 140259071164416 (0x7f909c1d0000); returning to 0x7f909c81cf43
+handle_syscall -> (#3 close) from 0x7f909c81ced7 args  (0x5, 0xc4df, 0x1, 0x2, 0x5, 0x0) at iteration 45716
+handle_syscall: result 0 (0x0); returning to 0x7f909c81ced7
+handle_syscall -> (#21 access) from 0x7f909c818139 args  (0x7f909c821082, 0x0, 0x0, 0x2, 0x1, 0x0) at iteration 46604
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c818139
+handle_syscall -> (#257 ???) from 0x7f909c81ccdd args  (0xffffff9c, 0x7f909ca29920, 0x80000, 0x0, 0x0, 0x7fffd1828b4f) at iteration 52773
+handle_syscall: result 5 (0x5); returning to 0x7f909c81ccdd
+handle_syscall -> (#0 read) from 0x7f909c81cda4 args  (0x5, 0x7fffd1828b68, 0x340, 0x0, 0x0, 0x7fffd1828b4f) at iteration 52960
+handle_syscall: result 832 (0x340); returning to 0x7f909c81cda4
+handle_syscall -> (#5 fstat) from 0x7f909c81cc43 args  (0x5, 0x7fffd1828a00, 0x7fffd1828a00, 0x7f909ca29920, 0x7f909ca29920, 0x7f909ca29170) at iteration 55135
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cc43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x388040, 0x5, 0x802, 0x5, 0x0) at iteration 58752
+setattr: region 0x7f909bc30000 to 0x7f909bfb9000 (3620 KB) has user-visible attributes r-x
+mmap(0x7f909bc30000, 3706880, 5, 2050, 5, 0): mapping beyond end of file: file ends at byte 1597440 but mapping ends at byte 3706880 (2109440 bytes marked invalid starting at 0x7f909bdb6000)
+setattr: region 0x7f909bdb6000 to 0x7f909bfb9000 (2060 KB) has user-visible attributes ---
+handle_syscall: result 140259065266176 (0x7f909bc30000); returning to 0x7f909c81cf43
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909bda9000, 0x200000, 0x0, 0x1, 0x5, 0x0) at iteration 59240
+setattr: region 0x7f909bda9000 to 0x7f909bfa9000 (2048 KB) has user-visible attributes ---
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909bfa9000, 0xc000, 0x3, 0x812, 0x5, 0x179000) at iteration 59929
+setattr: region 0x7f909bfa9000 to 0x7f909bfb5000 (48 KB) has user-visible attributes rw-
+handle_syscall: result 140259068907520 (0x7f909bfa9000); returning to 0x7f909c81cf43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909bfb5000, 0x3040, 0x3, 0x32, 0xffffffff, 0x0) at iteration 60683
+setattr: region 0x7f909bfb5000 to 0x7f909bfb9000 (16 KB) has user-visible attributes rw-
+handle_syscall: result 140259068956672 (0x7f909bfb5000); returning to 0x7f909c81cf43
+handle_syscall -> (#3 close) from 0x7f909c81ced7 args  (0x5, 0x28, 0x0, 0x31, 0x6fffffff, 0x70000021) at iteration 63002
+handle_syscall: result 0 (0x0); returning to 0x7f909c81ced7
+handle_syscall -> (#21 access) from 0x7f909c818139 args  (0x7f909c821082, 0x0, 0x0, 0x7f909c81dd50, 0x1, 0x0) at iteration 65228
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c818139
+handle_syscall -> (#257 ???) from 0x7f909c81ccdd args  (0xffffff9c, 0x7f909ca29e20, 0x80000, 0x0, 0x0, 0x7fffd1828b1f) at iteration 68452
+handle_syscall: result 5 (0x5); returning to 0x7f909c81ccdd
+handle_syscall -> (#0 read) from 0x7f909c81cda4 args  (0x5, 0x7fffd1828b38, 0x340, 0x0, 0x0, 0x7fffd1828b1f) at iteration 68479
+handle_syscall: result 832 (0x340); returning to 0x7f909c81cda4
+handle_syscall -> (#5 fstat) from 0x7f909c81cc43 args  (0x5, 0x7fffd18289d0, 0x7fffd18289d0, 0x7f909ca29e20, 0x7f909ca29e20, 0x7f909ca29170) at iteration 68757
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cc43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x2000, 0x3, 0x22, 0xffffffff, 0x0) at iteration 69093
+setattr: region 0x7f909c1c0000 to 0x7f909c1c2000 (8 KB) has user-visible attributes rw-
+handle_syscall: result 140259071098880 (0x7f909c1c0000); returning to 0x7f909c81cf43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x217430, 0x5, 0x802, 0x5, 0x0) at iteration 69765
+setattr: region 0x7f909ba10000 to 0x7f909bc28000 (2144 KB) has user-visible attributes r-x
+mmap(0x7f909ba10000, 2195456, 5, 2050, 5, 0): mapping beyond end of file: file ends at byte 98304 but mapping ends at byte 2195456 (2097152 bytes marked invalid starting at 0x7f909ba28000)
+setattr: region 0x7f909ba28000 to 0x7f909bc28000 (2048 KB) has user-visible attributes ---
+handle_syscall: result 140259063037952 (0x7f909ba10000); returning to 0x7f909c81cf43
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909ba27000, 0x1ff000, 0x0, 0x1, 0x5, 0x0) at iteration 69812
+setattr: region 0x7f909ba27000 to 0x7f909bc26000 (2044 KB) has user-visible attributes ---
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909bc26000, 0x2000, 0x3, 0x812, 0x5, 0x16000) at iteration 69915
+setattr: region 0x7f909bc26000 to 0x7f909bc28000 (8 KB) has user-visible attributes rw-
+handle_syscall: result 140259065225216 (0x7f909bc26000); returning to 0x7f909c81cf43
+handle_syscall -> (#3 close) from 0x7f909c81ced7 args  (0x5, 0x28, 0x0, 0x31, 0x6fffffff, 0x70000021) at iteration 71466
+handle_syscall: result 0 (0x0); returning to 0x7f909c81ced7
+handle_syscall -> (#21 access) from 0x7f909c818139 args  (0x7f909c821082, 0x0, 0x0, 0x7f909c81e110, 0x1, 0x0) at iteration 72804
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c818139
+handle_syscall -> (#257 ???) from 0x7f909c81ccdd args  (0xffffff9c, 0x7f909c1c04d0, 0x80000, 0x0, 0x0, 0x7fffd1828aef) at iteration 75474
+handle_syscall: result 5 (0x5); returning to 0x7f909c81ccdd
+handle_syscall -> (#0 read) from 0x7f909c81cda4 args  (0x5, 0x7fffd1828b08, 0x340, 0x0, 0x0, 0x7fffd1828aef) at iteration 75512
+handle_syscall: result 832 (0x340); returning to 0x7f909c81cda4
+handle_syscall -> (#5 fstat) from 0x7f909c81cc43 args  (0x5, 0x7fffd18289a0, 0x7fffd18289a0, 0x7f909c1c04d0, 0x7f909c1c04d0, 0x7f909ca29170) at iteration 75795
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cc43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x3f0ae0, 0x5, 0x802, 0x5, 0x0) at iteration 76776
+setattr: region 0x7f909b610000 to 0x7f909ba01000 (4036 KB) has user-visible attributes r-x
+mmap(0x7f909b610000, 4132864, 5, 2050, 5, 0): mapping beyond end of file: file ends at byte 2031616 but mapping ends at byte 4132864 (2101248 bytes marked invalid starting at 0x7f909b800000)
+setattr: region 0x7f909b800000 to 0x7f909ba01000 (2052 KB) has user-visible attributes ---
+handle_syscall: result 140259058843648 (0x7f909b610000); returning to 0x7f909c81cf43
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909b7f7000, 0x200000, 0x0, 0x1, 0x5, 0x0) at iteration 76814
+setattr: region 0x7f909b7f7000 to 0x7f909b9f7000 (2048 KB) has user-visible attributes ---
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909b9f7000, 0x6000, 0x3, 0x812, 0x5, 0x1e7000) at iteration 76870
+setattr: region 0x7f909b9f7000 to 0x7f909b9fd000 (24 KB) has user-visible attributes rw-
+handle_syscall: result 140259062935552 (0x7f909b9f7000); returning to 0x7f909c81cf43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909b9fd000, 0x3ae0, 0x3, 0x32, 0xffffffff, 0x0) at iteration 77236
+setattr: region 0x7f909b9fd000 to 0x7f909ba01000 (16 KB) has user-visible attributes rw-
+handle_syscall: result 140259062960128 (0x7f909b9fd000); returning to 0x7f909c81cf43
+handle_syscall -> (#3 close) from 0x7f909c81ced7 args  (0x5, 0x28, 0x0, 0x31, 0x6fffffff, 0x70000021) at iteration 78157
+handle_syscall: result 0 (0x0); returning to 0x7f909c81ced7
+handle_syscall -> (#21 access) from 0x7f909c818139 args  (0x7f909c821082, 0x0, 0x0, 0x7f909c81e610, 0x1, 0x0) at iteration 80628
+handle_syscall: result -2 (0xfffffffffffffffe); returning to 0x7f909c818139
+handle_syscall -> (#257 ???) from 0x7f909c81ccdd args  (0xffffff9c, 0x7f909c1c09b0, 0x80000, 0x0, 0x0, 0x7fffd182899f) at iteration 83399
+handle_syscall: result 5 (0x5); returning to 0x7f909c81ccdd
+handle_syscall -> (#0 read) from 0x7f909c81cda4 args  (0x5, 0x7fffd18289b8, 0x340, 0x0, 0x0, 0x7fffd182899f) at iteration 83426
+handle_syscall: result 832 (0x340); returning to 0x7f909c81cda4
+handle_syscall -> (#5 fstat) from 0x7f909c81cc43 args  (0x5, 0x7fffd1828850, 0x7fffd1828850, 0x7f909c1c09b0, 0x7f909c1c09b0, 0x7f909ca29950) at iteration 83723
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cc43
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x39d158, 0x5, 0x802, 0x5, 0x0) at iteration 84432
+setattr: region 0x7f909b270000 to 0x7f909b60e000 (3704 KB) has user-visible attributes r-x
+mmap(0x7f909b270000, 3792896, 5, 2050, 5, 0): mapping beyond end of file: file ends at byte 1703936 but mapping ends at byte 3792896 (2088960 bytes marked invalid starting at 0x7f909b410000)
+setattr: region 0x7f909b410000 to 0x7f909b60e000 (2040 KB) has user-visible attributes ---
+handle_syscall: result 140259055042560 (0x7f909b270000); returning to 0x7f909c81cf43
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909b40d000, 0x1ff000, 0x0, 0x1, 0x5, 0x0) at iteration 84470
+setattr: region 0x7f909b40d000 to 0x7f909b60c000 (2044 KB) has user-visible attributes ---
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x7f909b60c000, 0x2000, 0x3, 0x812, 0x5, 0x19c000) at iteration 84540
+setattr: region 0x7f909b60c000 to 0x7f909b60e000 (8 KB) has user-visible attributes rw-
+handle_syscall: result 140259058827264 (0x7f909b60c000); returning to 0x7f909c81cf43
+handle_syscall -> (#3 close) from 0x7f909c81ced7 args  (0x5, 0x28, 0x0, 0x31, 0x6fffffff, 0x70000021) at iteration 86022
+handle_syscall: result 0 (0x0); returning to 0x7f909c81ced7
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x2000, 0x3, 0x22, 0xffffffff, 0x0) at iteration 125370
+setattr: region 0x7f909c1a0000 to 0x7f909c1a2000 (8 KB) has user-visible attributes rw-
+handle_syscall: result 140259070967808 (0x7f909c1a0000); returning to 0x7f909c81cf43
+handle_syscall -> (#158 arch_prctl) from 0x7f909c801024 args  (0x1002, 0x7f909c1a0b80, 0x7f909c1a14b0, 0x7f909c1a0038, 0x90, 0x40) at iteration 128167
+arch_prctl: set FS base to 0x7f909c1a0b80
+handle_syscall: result 0 (0x0); returning to 0x7f909c801024
+Completed        134286 cycles,         47018 commits:    670340 Hz,    234708 insns/sec: rip 0x7f909c80d2f0                                                    
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909b9f7000, 0x4000, 0x1, 0x7f909c1c04f0, 0x7fffd1829010, 0x173) at iteration 278110
+setattr: region 0x7f909b9f7000 to 0x7f909b9fb000 (16 KB) has user-visible attributes r--
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909b60c000, 0x1000, 0x1, 0x7f909c1c09d0, 0x1, 0x56e) at iteration 297348
+setattr: region 0x7f909b60c000 to 0x7f909b60d000 (4 KB) has user-visible attributes r--
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+handle_syscall -> (#10 mprotect) from 0x7f909c81cff7 args  (0x7f909bc26000, 0x1000, 0x1, 0x7f909c1c0000, 0x1, 0x798) at iteration 305147
+setattr: region 0x7f909bc26000 to 0x7f909bc27000 (4 KB) has user-visible attributes r--
+handle_syscall: result 0 (0x0); returning to 0x7f909c81cff7
+Completed        319682 cycles,        135356 commits:    926967 Hz,    441684 insns/sec: rip 0x7f909c80d305                                                    
+Completed        451882 cycles,        230875 commits:    660990 Hz,    477587 insns/sec: rip 0x7f909c80ca70                                                    
+Completed        577398 cycles,        331481 commits:    627547 Hz,    503004 insns/sec: rip 0x7f909c81e770                                                    
+Completed        650463 cycles,        390638 commits:    365313 Hz,    295775 insns/sec: rip 0x7f909c80b188                                                    
+handle_syscall -> (#9 mmap) from 0x7f909c81cf43 args  (0x0, 0x2000, 0x3, 0x22, 0xffffffff, 0x0) at iteration 670670
+setattr: region 0x7f909c180000 to 0x7f909c182000 (8 KB) has user-visible attributes rw-
+handle_syscall: result 140259070836736 (0x7f909c180000); returning to 0x7f909c81cf43
+Completed        748901 cycles,        479460 commits:    487057 Hz,    439479 insns/sec: rip 0x7f909c81d398                                                    
+Completed        864246 cycles,        576589 commits:    576721 Hz,    485642 insns/sec: rip 0x7f909c80b243                                                    
+Completed        994281 cycles,        686596 commits:    650173 Hz,    550033 insns/sec: rip 0x7f909c81d3a2                                                    
+Completed       1090775 cycles,        780703 commits:    482232 Hz,    470303 insns/sec: rip 0x7f909c80cb26                                                    
+Completed       1205874 cycles,        893694 commits:    575462 Hz,    564923 insns/sec: rip 0x7f909c80a74b                                                    
+Completed       1341863 cycles,       1014908 commits:    679636 Hz,    605795 insns/sec: rip 0x7f909c80b0f8                                                    
+Completed       1469510 cycles,       1124728 commits:    638208 Hz,    549077 insns/sec: rip 0x7f909c80a72a                                                    
+Completed       1604118 cycles,       1240993 commits:    672955 Hz,    581251 insns/sec: rip 0x7f909c80a37f                                                    
+Completed       1730186 cycles,       1352722 commits:    629452 Hz,    557858 insns/sec: rip 0x7f909c80a36d                                                    
+Completed       1854136 cycles,       1459003 commits:    619743 Hz,    531399 insns/sec: rip 0x7f909c80b0f8                                                    
+Completed       1969854 cycles,       1563663 commits:    578561 Hz,    523274 insns/sec: rip 0x7f909c80b0f8                                                    
+Completed       2074346 cycles,       1655158 commits:    522385 Hz,    457409 insns/sec: rip 0x7f909c81d398                                                    
