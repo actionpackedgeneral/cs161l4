@@ -9,7 +9,7 @@ using namespace std;
 
 #define  BLOCK_SIZE     16
 
-void n2_fifo(int CACHE_SIZE, int associativity){
+void n2_fifo(int CACHE_SIZE, int associativity, vector<unsigned long long> trace){
     //std::ifstream inFS("trace");
     int number_of_blocks = CACHE_SIZE / (BLOCK_SIZE * associativity);
     //std::cout << log2(number_of_blocks) << "\n";
@@ -26,7 +26,8 @@ void n2_fifo(int CACHE_SIZE, int associativity){
    // read memory accesses from standard input
     unsigned long long read_line;
     int total = 0, miss = 0;
-    while (cin >> std::hex >> read_line) {
+    for(int a = 0; a < trace.size(); a++) {
+        read_line = trace.at(a);
         total++;
         int tag   = read_line >> ((10 - (associativity / 2)) + 4); // get tag
         int index = read_line >> 4;        // get index
@@ -54,8 +55,9 @@ void n2_fifo(int CACHE_SIZE, int associativity){
     //inFS.close();
 }
 
-void lru(int CACHE_SIZE, int associativity) {
-    std::ifstream inFS("trace");
+void lru(int CACHE_SIZE, int associativity,vector <unsigned long long> trace) {
+    //cin.clear();
+    //std::ifstream inFS("trace");
     int number_of_blocks = CACHE_SIZE / (BLOCK_SIZE * associativity);
     //std::cout << log2(number_of_blocks) << "\n";
     int index_bitmask = pow(2,log2(number_of_blocks) ) - 1;
@@ -71,8 +73,9 @@ void lru(int CACHE_SIZE, int associativity) {
    // read memory accesses from standard input
     unsigned long long read_line;
     int total = 0, miss = 0;
-    while (cin >> std::hex >> read_line) {
+    for(int a = 0; a < trace.size(); a++) {
         total++;
+        read_line = trace.at(a);
         int tag   = read_line >> ((10 - (associativity / 2)) + 4); // get tag
         int index = read_line >> 4;        // get index
         //int offset = read_line & 0x1;
@@ -111,16 +114,20 @@ void lru(int CACHE_SIZE, int associativity) {
 
 
 int main () {
+
    // build cache
     //direct_fifo(16384);
-    n2_fifo(16384,1);
-    n2_fifo(16384,2);
-    n2_fifo(16384,4);
-    n2_fifo(16384,8);
-    lru(16384,1);
-    lru(16384,2);
-    lru(16384,4);
-    lru(16384,8);
+    vector< unsigned long long> trace;
+    unsigned long long read_line; 
+    while( cin >> hex >> read_line) trace.push_back(read_line);
+    n2_fifo(16384,1,trace);
+    n2_fifo(16384,2,trace);
+    n2_fifo(16384,4,trace);
+    n2_fifo(16384,8,trace);
+    lru(16384,1,trace);
+    lru(16384,2,trace);
+    lru(16384,4,trace);
+    lru(16384,8,trace);
 
    return 0;
 }
